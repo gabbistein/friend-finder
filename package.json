@@ -1,0 +1,23 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "A state-of-the-art app for finding compatible companions.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabbistein/friend-finder.git"
+  },
+  "author": "Gabbi Stein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabbistein/friend-finder/issues"
+  },
+  "homepage": "https://github.com/gabbistein/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
