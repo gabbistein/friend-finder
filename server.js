@@ -13,14 +13,10 @@ const apiRoutes = require("./app/routing/apiRoutes");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
 // App.use part:
 app.use(express.static("app/public"));
 app.use("/", htmlRoutes);
-// app.use("/api", apiRoutes);
-
-
-
+app.use("/api", apiRoutes);
 
 // Telling my app to listen at this PORT:
 app.listen(PORT, function() {
