@@ -19,10 +19,8 @@ body {
     position: absolute;
     width: 75%;
     left: 50%;
-    transform: translate(-50%, 5%);
+    transform: translate(-50%, 2%);
 }
-
-
 
 #survey-button {
     background: dodgerblue;
@@ -35,3 +33,7 @@ body {
     transition: ease-in-out .5s;
 }
 
+.form-check {
+    text-align: left;
+    margin-left: 41%;
+}
