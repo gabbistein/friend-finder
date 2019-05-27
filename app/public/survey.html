@@ -17,6 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel='stylesheet' href="./style.css">
 </head>
 
@@ -29,402 +30,422 @@
 
             <hr class="my-4">
 
-            <div class="card">
-                <div class="card-header"><i>Question #1</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">At a party, you'll find me in the middle of all the action.</h5>
-                    <p class="card-text">
+            <form action="../data/friends.js" method="POST">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupOneButtons" value="1">Strongly Disagree</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupOneButtons" value="2">Disagree</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupOneButtons" value="3">Neutral</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupOneButtons" value="4">Agree</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupOneButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Your name:</label>
+                    <input type="text" class="form-control" id="your-name" placeholder="Your name">
                 </div>
-            </div><br>
 
-            <div class="card">
-                <div class="card-header"><i>Question #2</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">Rollerblades are better than rollerskates.</h5>
-                    <p class="card-text">
+                <div class="card">
+                    <div class="card-header"><i>Question #1</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">At a party, you'll find me in the middle of all the action.</h5>
+                        <p class="card-text">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTwoButtons" value="1">Strongly Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupOneButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTwoButtons" value="2">Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupOneButtons" value="2">Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTwoButtons" value="3">Neutral</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupOneButtons" value="3">Neutral</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTwoButtons" value="4">Agree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupOneButtons" value="4">Agree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTwoButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
-                </div>
-            </div><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupOne" id="groupOneButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupOneButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
 
-            <div class="card">
-                <div class="card-header"><i>Question #3</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">Asparagus is the absolute worst.</h5>
-                    <p class="card-text">
+                <div class="card">
+                    <div class="card-header"><i>Question #2</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Rollerblades are better than rollerskates.</h5>
+                        <p class="card-text">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupThreeButtons" value="1">Strongly Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupTwoButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupThreeButtons" value="2">Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupTwoButtons" value="2">Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupThreeButtons" value="3">Neutral</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupTwoButtons" value="3">Neutral</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupThreeButtons" value="4">Agree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupTwoButtons" value="4">Agree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupThreeButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
-                </div>
-            </div><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTwo" id="groupTwoButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupTwoButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
 
-            <div class="card">
-                <div class="card-header"><i>Question #4</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">If I have some free time, you'll probably find me playing video games.</h5>
-                    <p class="card-text">
+                <div class="card">
+                    <div class="card-header"><i>Question #3</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Asparagus is the absolute worst.</h5>
+                        <p class="card-text">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFourButtons" value="1">Strongly Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupThreeButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFourButtons" value="2">Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupThreeButtons" value="2">Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFourButtons" value="3">Neutral</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupThreeButtons" value="3">Neutral</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFourButtons" value="4">Agree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupThreeButtons" value="4">Agree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFourButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
-                </div>
-            </div><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupThree" id="groupThreeButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupThreeButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
 
-            <div class="card">
-                <div class="card-header"><i>Question #5</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">Dogs are better pets than cats.</h5>
-                    <p class="card-text">
+                <div class="card">
+                    <div class="card-header"><i>Question #4</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">If I have some free time, you'll probably find me playing video games.
+                        </h5>
+                        <p class="card-text">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFiveButtons" value="1">Strongly Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupFourButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFiveButtons" value="2">Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupFourButtons" value="2">Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFiveButtons" value="3">Neutral</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupFourButtons" value="3">Neutral</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFiveButtons" value="4">Agree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupFourButtons" value="4">Agree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupFiveButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
-                </div>
-            </div><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFour" id="groupFourButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupFourButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
 
-            <div class="card">
-                <div class="card-header"><i>Question #6</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">I'm a procrastinator.</h5>
-                    <p class="card-text">
+                <div class="card">
+                    <div class="card-header"><i>Question #5</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dogs are better pets than cats.</h5>
+                        <p class="card-text">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSixButtons" value="1">Strongly Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupFiveButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSixButtons" value="2">Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupFiveButtons" value="2">Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSixButtons" value="3">Neutral</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupFiveButtons" value="3">Neutral</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSixButtons" value="4">Agree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupFiveButtons" value="4">Agree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSixButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
-                </div>
-            </div><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupFive" id="groupFiveButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupFiveButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
 
+                <div class="card">
+                    <div class="card-header"><i>Question #6</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">I'm a procrastinator.</h5>
+                        <p class="card-text">
 
-            <div class="card">
-                <div class="card-header"><i>Question #7</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">If there's an option, I'd rather read the book than watch the movie.</h5>
-                    <p class="card-text">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupSixButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSevenButtons" value="1">Strongly Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupSixButtons" value="2">Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSevenButtons" value="2">Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupSixButtons" value="3">Neutral</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSevenButtons" value="3">Neutral</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupSixButtons" value="4">Agree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSevenButtons" value="4">Agree</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupSevenButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
-                </div>
-            </div><br>
-
-
-            <div class="card">
-                <div class="card-header"><i>Question #8</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">I'd choose wine over beer any day.</h5>
-                    <p class="card-text">
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupEightButtons" value="1">Strongly Disagree</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupEightButtons" value="2">Disagree</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupEightButtons" value="3">Neutral</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupEightButtons" value="4">Agree</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupEightButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
-                </div>
-            </div><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSix" id="groupSixButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupSixButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
 
 
-            <div class="card">
-                <div class="card-header"><i>Question #9</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">If I had any superpower, I'd choose flying.</h5>
-                    <p class="card-text">
+                <div class="card">
+                    <div class="card-header"><i>Question #7</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">If there's an option, I'd rather read the book than watch the movie.</h5>
+                        <p class="card-text">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupNineButtons" value="1">Strongly Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupSevenButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupNineButtons" value="2">Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupSevenButtons" value="2">Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupNineButtons" value="3">Neutral</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupSevenButtons" value="3">Neutral</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupNineButtons" value="4">Agree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupSevenButtons" value="4">Agree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupNineButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
-                </div>
-            </div><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupSeven" id="groupSevenButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupSevenButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
 
 
-            <div class="card">
-                <div class="card-header"><i>Question #10</i></div>
-                <div class="card-body">
-                    <h5 class="card-title">I'm a fan of spicy foods.</h5>
-                    <p class="card-text">
+                <div class="card">
+                    <div class="card-header"><i>Question #8</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">I'd choose wine over beer any day.</h5>
+                        <p class="card-text">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTenButtons" value="1">Strongly Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupEightButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTenButtons" value="2">Disagree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupEightButtons" value="2">Disagree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTenButtons" value="3">Neutral</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupEightButtons" value="3">Neutral</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTenButtons" value="4">Agree</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupEightButtons" value="4">Agree</label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
-                                value="option2">
-                            <label class="form-check-label" for="groupTenButtons" value="5">Strongly Agree</label>
-                        </div>
-                    </p>
-                </div>
-            </div><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupEight" id="groupEightButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupEightButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
+
+
+                <div class="card">
+                    <div class="card-header"><i>Question #9</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">If I had any superpower, I'd choose flying.</h5>
+                        <p class="card-text">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupNineButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupNineButtons" value="2">Disagree</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupNineButtons" value="3">Neutral</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupNineButtons" value="4">Agree</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupNine" id="groupNineButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupNineButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
+
+
+                <div class="card">
+                    <div class="card-header"><i>Question #10</i></div>
+                    <div class="card-body">
+                        <h5 class="card-title">I'm a fan of spicy foods.</h5>
+                        <p class="card-text">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
+                                    value="1">
+                                <label class="form-check-label" for="groupTenButtons" value="1">Strongly
+                                    Disagree</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
+                                    value="2">
+                                <label class="form-check-label" for="groupTenButtons" value="2">Disagree</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
+                                    value="3">
+                                <label class="form-check-label" for="groupTenButtons" value="3">Neutral</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
+                                    value="4">
+                                <label class="form-check-label" for="groupTenButtons" value="4">Agree</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="groupTen" id="groupTenButtons"
+                                    value="5">
+                                <label class="form-check-label" for="groupTenButtons" value="5">Strongly Agree</label>
+                            </div>
+                        </p>
+                    </div>
+                </div><br>
+            </form>
 
             <button type="button" class="btn btn-primary" id="survey-button" data-toggle="modal"
                 data-target="#exampleModalCenter">Submit</button>
+
         </div>
     </div>
 
@@ -441,7 +462,7 @@
                 </div>
                 <div class="modal-body">
                     <img>
-                    Your new friend is: <div id="new-friend"></div>
+                    Your new friend is: <b><span id="new-friend"></span></b>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -450,6 +471,30 @@
         </div>
     </div>
     <!-- End of modal. -->
+
+    <script>
+
+        $("#survey-button").click(function () {
+            getFriend();
+            var newFriend = {
+                name: $("#your-name").val(),
+                scores: [parseInt($("input[name=groupOne]:checked").val()), parseInt($("input[name=groupTwo]:checked").val()), parseInt($("input[name=groupThree]:checked").val()), parseInt($("input[name=groupFour]:checked").val()), parseInt($("input[name=groupFive]:checked").val()), parseInt($("input[name=groupSix]:checked").val()), parseInt($("input[name=groupSeven]:checked").val()), parseInt($("input[name=groupEight]:checked").val()), parseInt($("input[name=groupNine]:checked").val()), parseInt($("input[name=groupTen]:checked").val())]
+            };
+            console.log(newFriend);
+            $.post("/api/friends", newFriend, function (data) {
+                console.log("Successful post: " + data);
+            })
+        });
+
+        function getFriend() {
+            $.get("/api/friends", function (response) {
+                console.log("Success! You've received your friend.");
+                $("#new-friend").text(response[0].name);
+                console.log(response);
+            });
+        }
+
+    </script>
 
 </body>
 

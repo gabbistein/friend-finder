@@ -16,10 +16,10 @@ app.use(express.json());
 // App.use part:
 app.use(express.static("app/public"));
 app.use("/", htmlRoutes);
-app.use("/api", apiRoutes);
+app.use(apiRoutes);
 
-// Telling my app to listen at this PORT:
-app.listen(PORT, function() {
-    console.log("App is listening on PORT: " + PORT);
-  });
   
+// Telling my app to listen at this PORT:
+app.listen(PORT, function () {
+    console.log("App is listening on PORT: " + PORT);
+});
