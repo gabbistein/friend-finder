@@ -490,12 +490,10 @@
             $.get("/api/friends", function (response) {
                 console.log("Success! You've received your friend.");
                 $("#new-friend").text(response[0].name);
-                console.log(response);
             });
         }
 
     </script>
 
 </body>
-
 </html>
